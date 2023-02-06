@@ -12,6 +12,34 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+    // 논리 연산자 (logical)
+    // &&, ||, !
+
+    // && (and, 논리곱) : 두개의 항이 모두 true이면 결과가 true, 나머지는 false
+    // 피연산자의 type은 boolean
+    console.log(true&&true);
+    console.log(true&&false);
+    console.log(false&&true);
+    console.log(false&&false);
+
+    // || (or, 논리합) : 두개의 항이 모두 false이면 결과가 false, 나머지는 true
+    // 피연산자의 type은 boolean
+    console.log(true||true);
+    console.log(true||false);
+    console.log(false||true);
+    console.log(false||false);
+
+    // !(not) : 피연산자가 하나(boolean), 결과는 피연산자의 반대
+
+    console.log(!true);
+    console.log(!false);
+
+    let x = 6;
+    let y = 3;
+
+    console.log((x<10) && (y>1));
+    console.log(x===5 || y===5);
+    console.log(!(x===y));
     
     </script>
 </body>

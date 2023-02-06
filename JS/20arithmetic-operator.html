@@ -12,7 +12,21 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
+    // 피연산자가 하나인 산술연산자(unary)
+    // +, -, ++, --
+    let a=3;
+    let b=+a; // a의 부호를 바꾸지 않은 결과
+    console.log(b);
+
+    let c=-a;
+    console.log(c);
+
+    let d="3";
+    let e=3+d; // "33"
+    console.log(e);
+
+    let f=3+(+d); //string을 number로 바꿀때 + 연산자 종종 씀
+    console.log(f);
     </script>
 </body>
 </html>

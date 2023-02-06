@@ -12,7 +12,43 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+    // 비교연산자의 피연산자가 string(문자열)
+
+    // 문자의 코드로 비교(사전순과 유사)
     
+    let a="java";
+    let b="js";
+
+    console.log(a===b);
+    console.log(a!==b);
+    console.log(a==="java");
+    console.log(a==="JAVA");
+
+    let c="c";
+    let d="d";
+    console.log(c<d);
+    console.log(c>d);
+
+    console.log(c<"can");
+    console.log(c<"C");
+
+    console.log("갧"<"겶");
+
+    // 다른 타입과 비교 (두 항을 Number로 변환 후 비교)
+    // 가능한 피할 것!!
+    console.log("3"<4);
+    console.log("5"<4);
+    console.log("11"<"2");
+    console.log("11"<2);
+
+    let e="11";
+    let f=2;
+
+    let g=+e;
+    console.log(g<f);
+
+    let h=""+f;
+    console.log(e<h);
     </script>
 </body>
 </html>

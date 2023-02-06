@@ -12,6 +12,54 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+    // 대입(할당)연산자 : assignment operator
+    // =, +=, -=, *=, /=, %=
+
+    // = : 오른쪽 값을 왼쪽에 대입(할당)
+    let a=3;
+    let b="hello";
+    let c=a;
+    let d=b;
+    let e=a+5;
+    let f=b+", world";
+
+    // 할당연산자는 우선순위가 낮음
+    let g=8;
+    g=g+1;
+    console.log(g);
+
+    // += : 두항의 값을 더해서 왼쪽 변수에 할당
+    let h=7;
+    h=h+1;
+
+    let i=7;
+    i+=1; // i=i+1;
+    console.log(i);
+
+    i+=i;
+    console.log(i);
+
+    //  -=, *=, /=, %=
+    let j=10;
+    j-=3;
+    console.log(j);
+
+    j*=5;
+    console.log(j);
+
+    j/=7;
+    console.log(j);
+
+    j%=2;
+    console.log(j);
+
+    // += : 문자열과 같이 사용하면 연결연산 후 값 할당
+    let k=5;
+    k+="cake"
+    console.log(k);
+    let l="5";
+    l+=3;
+    console.log(l);
     
     </script>
 </body>
