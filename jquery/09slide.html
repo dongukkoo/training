@@ -7,36 +7,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
     </style>
-</head>
+<head>
 <body>
-    <!-- input#input1+ul#list1 -->
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
-    <hr>
-
-    <input type="text" id="input2">
-    <ul id="list2"></ul>
-
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <d class="grid">
+                    <button onclick="slideContent();" class="btn btn-primary">슬라이드 효과</button>
+                </d>
+            </div>
+        </div>
+        <div class="row" id="content1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo natus doloribus obcaecati itaque voluptate non quibusdam minima nemo. Ratione ipsam cum iure nihil dolor nostrum nobis voluptas quod pariatur atque!
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $("#input2").keyup(function(e)
-        if (e.key === "Enter") {
-            $("#list2").append
-        }) {
-
+        function slideContent() {
+            $("#content1").slideToggle();
         }
-
-
-        // 보통의 자바스크립트 코드 (vanilla javascript)
-    document.querySelector("#input1").addEventListener("keyup", function(e) {
-        if (e.key === "Enter") {
-            let li = document.createElement("li");
-            li.textContent = this.value;
-            document.querySelector("#list1").append(li);
-            this.value = "";
-        }
-    });
     </script>
 </body>
 </html>

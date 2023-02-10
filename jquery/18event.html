@@ -7,36 +7,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
     </style>
-</head>
+<head>
 <body>
-    <!-- input#input1+ul#list1 -->
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
-    <hr>
-
-    <input type="text" id="input2">
-    <ul id="list2"></ul>
-
+    <button id="fadeInAll">모두 보이기</button>
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+    <p>
+        Perspiciatis aut voluptatum sint ducimus.
+    </p>
+    <p>
+        Aperiam dolorum nemo rem in.
+    </p>
+    <p>
+        In eaque commodi nam provident!
+    </p>
+    <p>
+        Iusto quasi vero aliquam perferendis?
+    </p>
+    <p>
+        Non eos laudantium officiis a.
+    </p>
+    <p>
+        Beatae dolorem tempora architecto magnam.
+    </p>
+    <p>
+        Sit doloribus dolores vero! Voluptatem.
+    </p>
+    <p>
+        Doloremque, ratione! Est, aspernatur libero?
+    </p>
+    <p>
+        Necessitatibus pariatur quibusdam debitis vero!
+    </p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $("#input2").keyup(function(e)
-        if (e.key === "Enter") {
-            $("#list2").append
-        }) {
-
-        }
-
-
-        // 보통의 자바스크립트 코드 (vanilla javascript)
-    document.querySelector("#input1").addEventListener("keyup", function(e) {
-        if (e.key === "Enter") {
-            let li = document.createElement("li");
-            li.textContent = this.value;
-            document.querySelector("#list1").append(li);
-            this.value = "";
-        }
-    });
+        $("p").on("click", function() {
+            $(this).fadeOut("slow");
+        })
+        
+        $("#fadeInAll").on("click", function() {
+            $("p").fadeIn(3000);
+        })
     </script>
 </body>
 </html>
